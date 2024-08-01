@@ -31,7 +31,7 @@ int main() {
     // 准备 sockaddr_in 结构
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = inet_addr("127.0.0.1"); // 服务器 IP 地址
-    server_addr.sin_port = htons(8888);
+    server_addr.sin_port = htons(4567);
 
     // 发送数据
     message = "Hello, Server!";

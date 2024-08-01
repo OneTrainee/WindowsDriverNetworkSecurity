@@ -30,7 +30,7 @@ int main() {
     // 准备 sockaddr_in 结构
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = INADDR_ANY;
-    server_addr.sin_port = htons(8888);
+    server_addr.sin_port = htons(4567);
 
     // 绑定
     if (bind(server_socket, (struct sockaddr*)&server_addr, sizeof(server_addr)) == SOCKET_ERROR) {
